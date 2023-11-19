@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div class="flex flex-col items-center">
-    <h1 class="text-3xl font-bold">Let's Study Hiragana and Katakana</h1>
-    <p class="text-center mt-4">
+  <div class="flex flex-col items-center text-center">
+    <h1 class="text-2xl lg:text-3xl font-bold">Let's Study Hiragana and Katakana</h1>
+    <p class="text-sm lg:text-base mt-4">
       A random hiragana or katakana character will appear.<br>
       Try to guess the pronunciation.
     </p>
