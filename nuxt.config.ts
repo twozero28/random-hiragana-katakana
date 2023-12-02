@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       title: 'Random Hiragana Katakana',
       meta: [
         {

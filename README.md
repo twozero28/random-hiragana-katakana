@@ -4,7 +4,7 @@ One of the hiragana and katakana characters will be randomly displayed
 
 ---
 #### URL
-http://www.random-hiragana-katakana.com/
+https://www.random-hiragana-katakana.com
 
 ---
 Character Selection: can choose only hiragana or only katakana or both  
