@@ -43,10 +43,10 @@ const ModeForm = ({
         <option value="both" selected={character === "both"}>
           Both
         </option>
-        <option value="hiragana" selected={character === "hiragana"}>
+        <option value="hiragana" selected={character === "Hiragana"}>
           Hiragana
         </option>
-        <option value="Katakana" selected={character === "Katakana"}>
+        <option value="katakana" selected={character === "Katakana"}>
           Katakana
         </option>
       </SelectBox>
