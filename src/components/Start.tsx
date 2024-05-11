@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Mode } from "../model/mode";
 import { Character, hiraganas, katakanas } from "../lib/character-data";
 import { getRandomElement } from "../lib/utils";
+import Problem from "./start/Problem";
+import Answer from "./start/Answer";
 
 const getRandomHiraKana = (character: string): Character => {
   if (character === "hiragana") {
@@ -39,9 +41,9 @@ const Start = ({ isAuto, time, character }: Props) => {
   }, [showAnswer, isAuto]);
 
   return (
-    <div>
-      <h1>{randomCharacter.problem}</h1>
-      {showAnswer && <p>{randomCharacter.answer}</p>}
+    <div className="relative text-center">
+      <Problem problem={randomCharacter.problem} />
+      <Answer answer={randomCharacter.answer} isShown={showAnswer} />
     </div>
   );
 };
