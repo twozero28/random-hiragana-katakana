@@ -3,7 +3,6 @@ import Header from "./components/common/Header";
 import ModeForm from "./components/common/ModeForm";
 import Start from "./components/Start";
 import Home from "./components/Home";
-import clsx from "clsx";
 
 function App() {
   const [start, setStart] = useState(false);
@@ -50,28 +49,21 @@ function App() {
           />
         )}
       </Header>
-      <main
-        className={clsx(
-          "h-full flex justify-center items-center",
-          start && !mode.isAuto && "cursor-pointer"
-        )}
-      >
-        {start ? (
-          <Start {...mode} />
-        ) : (
-          <Home
-            modelForm={
-              <ModeForm
-                {...mode}
-                onChangeAuto={handleChangeAuto}
-                onChangeTime={handleChangeTime}
-                onChangeCharacter={handleChangeCharacter}
-              />
-            }
-            onClickStart={handleClickStart}
-          />
-        )}
-      </main>
+      {start ? (
+        <Start {...mode} />
+      ) : (
+        <Home
+          modelForm={
+            <ModeForm
+              {...mode}
+              onChangeAuto={handleChangeAuto}
+              onChangeTime={handleChangeTime}
+              onChangeCharacter={handleChangeCharacter}
+            />
+          }
+          onClickStart={handleClickStart}
+        />
+      )}
     </>
   );
 }

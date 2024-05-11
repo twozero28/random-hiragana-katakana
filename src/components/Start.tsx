@@ -4,6 +4,7 @@ import { Character, hiraganas, katakanas } from "../lib/character-data";
 import { getRandomElement } from "../lib/utils";
 import Problem from "./start/Problem";
 import Answer from "./start/Answer";
+import { clsx } from "clsx";
 
 const getRandomHiraKana = (character: string): Character => {
   if (character === "hiragana") {
@@ -40,11 +41,28 @@ const Start = ({ isAuto, time, character }: Props) => {
     }
   }, [showAnswer, isAuto]);
 
+  const handleClickMain = () => {
+    if (isAuto) return;
+    if (showAnswer) {
+      setShowAnswer(false);
+      setRandomCharacter(getRandomHiraKana(character));
+    } else {
+      setShowAnswer(true);
+    }
+  };
   return (
-    <div className="relative text-center">
-      <Problem problem={randomCharacter.problem} />
-      <Answer answer={randomCharacter.answer} isShown={showAnswer} />
-    </div>
+    <main
+      className={clsx(
+        "h-full flex justify-center items-center",
+        !isAuto && "cursor-pointer"
+      )}
+      onClick={handleClickMain}
+    >
+      <div className="relative text-center select-none">
+        <Problem problem={randomCharacter.problem} />
+        <Answer answer={randomCharacter.answer} isShown={showAnswer} />
+      </div>
+    </main>
   );
 };
 
