@@ -1,4 +1,4 @@
-# Simple website powered by React for studying Hiragana and Katakana (WIP)
+# Simple website powered by React for studying Hiragana and Katakana
 
 One of the hiragana and katakana characters will be randomly displayed
 
