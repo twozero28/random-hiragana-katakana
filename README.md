@@ -2,6 +2,8 @@
 
 One of the hiragana and katakana characters will be randomly displayed
 
+### URL - https://www.random-hiragana-katakana.com
+
 ### Selections
 - Character Selection: can choose only hiragana or only katakana or both
 - Mode Selection: auto or manual(must click or touch for moving next)

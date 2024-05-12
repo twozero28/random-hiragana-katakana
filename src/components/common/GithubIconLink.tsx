@@ -1,7 +1,7 @@
 const GithubIconLink = () => {
   return (
     <a
-      href="https://github.com/twozero28/random-hiragana-katakana"
+      href="https://github.com/twozero28/random-hiragana-katakana-react"
       target="_blank"
     >
       <svg
