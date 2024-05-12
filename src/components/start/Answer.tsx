@@ -1,4 +1,3 @@
-import React from "react";
 type Props = {
   answer: string;
   isShown: boolean;

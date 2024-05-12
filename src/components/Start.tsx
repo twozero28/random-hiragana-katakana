@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Mode } from "../model/mode";
 import { Character, hiraganas, katakanas } from "../lib/character-data";
 import { getRandomElement } from "../lib/utils";
