@@ -3,7 +3,7 @@
 </script>
 
 <a
-  href="https://github.com/twozero28/random-hirakana"
+  href="https://github.com/twozero28/random-hiragana-katakana"
   target="_blank"
 >
   <svg
