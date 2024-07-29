@@ -2,13 +2,6 @@
 
 One of the hiragana and katakana characters will be randomly displayed
 
-### URL - 
-
-### Selections
-- Character Selection: can choose only hiragana or only katakana or both
-- Mode Selection: auto or manual(must click or touch for moving next)
-- Time Selection: only for auto mode, time set until showing answer
-
 
 ## Tech Stack
 ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)  
